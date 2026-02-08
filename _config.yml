@@ -1,0 +1,24 @@
+markdown: kramdown
+highlighter: rouge
+
+permalink: pretty
+
+title: Shayan Abbasi
+tagline: 'Ph.D. Candidate'
+description: 'Quantitative Marketing | Data Science | Econometrics'
+url: https://shayanabbasi1995.github.io
+baseurl: /
+
+author:
+  name: 'Shayan Abbasi'
+  email: abbasi.shayan1995@gmail.com
+
+paginate: 5
+
+exclude:
+  - README.md
+  - LICENSE.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - ShayPic.jpg
