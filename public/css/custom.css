@@ -48,3 +48,22 @@
 .sidebar-about h1 {
   font-size: 1.75rem;
 }
+
+/*
+ * Limit line length and center the text block in the content area.
+ * Only the inner .page/.post is constrained; sidebar layout unchanged.
+ */
+.content.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content.container .page,
+.content.container .post {
+  max-width: 48rem;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
