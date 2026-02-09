@@ -50,46 +50,41 @@
 }
 
 /*
- * Main content: centered block, responsive margins, screen-size aware layout.
+ * Main content: use available width with comfortable padding, responsive to screen size.
+ * No narrow column - content fills the area to the right of the sidebar.
  */
 .content.container {
-  max-width: 42rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.content.container .page,
-.content.container .post {
-  margin-left: auto;
-  margin-right: auto;
+  max-width: none;
+  width: 100%;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-left: 0;
+  margin-right: 0;
+  box-sizing: border-box;
 }
 
 @media (min-width: 30em) {
+  .content.container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 48em) {
   .content.container {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 }
 
-@media (min-width: 48em) {
+@media (min-width: 64em) {
   .content.container {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-    max-width: 44rem;
   }
 }
 
-@media (min-width: 64em) {
-  .content.container {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    max-width: 46rem;
-  }
-}
-
-/* Responsive vertical padding on main content area */
+/* Comfortable vertical padding, responsive */
 .content {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -111,15 +106,7 @@
 
 @media (min-width: 64em) {
   .content {
-    padding-top: 4.5rem;
-    padding-bottom: 4.5rem;
-    margin-right: 4rem;
-  }
-}
-
-/* Extra right margin on very large screens for better balance */
-@media (min-width: 80em) {
-  .content {
-    margin-right: 5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 }
