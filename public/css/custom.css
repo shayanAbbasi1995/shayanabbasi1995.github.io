@@ -84,7 +84,7 @@
   }
 }
 
-/* Comfortable vertical padding, responsive */
+/* Comfortable vertical padding and ensure content never goes under sidebar */
 .content {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -97,10 +97,15 @@
   }
 }
 
+/* When sidebar is fixed (48em+), content must clear it; min-width prevents overlap on narrow viewports */
 @media (min-width: 48em) {
   .content {
     padding-top: 4rem;
     padding-bottom: 4rem;
+    margin-left: 20rem;
+    margin-right: 2rem;
+    min-width: 0;
+    box-sizing: border-box;
   }
 }
 
@@ -108,5 +113,7 @@
   .content {
     padding-top: 4rem;
     padding-bottom: 4rem;
+    margin-left: 22rem;
+    margin-right: 4rem;
   }
 }
