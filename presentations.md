@@ -15,6 +15,9 @@ Lisbon, Portugal · 2026
 **European Marketing Academy (EMAC)**
 Bath, UK · 2026
 
+**Administrative Sciences Association of Canada (ASAC)**
+Calgary, Canada · 2026
+
 ---
 
 ## Presentations
