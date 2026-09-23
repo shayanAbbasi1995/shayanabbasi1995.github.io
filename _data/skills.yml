@@ -1,0 +1,36 @@
+# Skill icons shown on the homepage, in display order, grouped into rows.
+# SVGs live in assets/img/skills/. Sources:
+#   - tandpfun/skill-icons (MIT): python, r, pytorch, scikitlearn, anaconda, latex,
+#     gcp, docker, git, github, linux, selenium
+#   - devicons/devicon (MIT): jupyter, pandas, numpy, matplotlib
+#   - simple-icons (CC0): quarto;  rstudio/hex-stickers (CC0): ggplot2
+#   - custom tiles in the same style: stata, econometrics, quasi-experiments,
+#     ab-testing, mmm, mta
+- group: Tools
+  items:
+    - { name: Python, icon: python.svg }
+    - { name: R, icon: r.svg }
+    - { name: Stata, icon: stata.svg }
+    - { name: Jupyter Notebook, icon: jupyter.svg }
+    - { name: Quarto, icon: quarto.svg }
+    - { name: pandas, icon: pandas.svg }
+    - { name: NumPy, icon: numpy.svg }
+    - { name: Matplotlib, icon: matplotlib.svg }
+    - { name: ggplot2, icon: ggplot2.svg }
+    - { name: scikit-learn, icon: scikitlearn.svg }
+    - { name: PyTorch, icon: pytorch.svg }
+    - { name: Anaconda, icon: anaconda.svg }
+    - { name: LaTeX, icon: latex.svg }
+    - { name: Google Cloud (Vertex AI), icon: gcp.svg }
+    - { name: Docker, icon: docker.svg }
+    - { name: Git, icon: git.svg }
+    - { name: GitHub, icon: github.svg }
+    - { name: Linux, icon: linux.svg }
+    - { name: Selenium, icon: selenium.svg }
+- group: Methods
+  items:
+    - { name: Econometrics, icon: econometrics.svg }
+    - { name: Quasi- & natural experiments (DiD, event studies), icon: quasi-experiments.svg }
+    - { name: A/B testing & experimental design, icon: ab-testing.svg }
+    - { name: Marketing Mix Modeling (MMM), icon: mmm.svg }
+    - { name: Multi-Touch Attribution (MTA), icon: mta.svg }

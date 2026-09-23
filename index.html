@@ -4,44 +4,81 @@ title: Home
 ---
 
 <div class="page">
-  <p>
-    <strong>Data Scientist</strong> with a
-    <strong>PhD in Quantitative Marketing</strong> from McMaster University and a
-    Master of Financial Economics from the Barcelona School of Economics.
-    <strong>Three years of experience</strong> applying <strong>causal inference</strong>,
-    <strong>NLP</strong>, and <strong>Retrieval-Augmented Generation (RAG)</strong> to
-    marketing and finance problems, from A/B testing and
-    <strong>Marketing Mix Modeling (MMM)</strong> to <strong>Agentic AI</strong>
-    applications. Research focuses on platform strategy, privacy policy, and the
-    <strong>adoption of generative AI</strong> within the mobile app ecosystem.
-  </p>
+  <section class="hero">
+    <h1 class="hero-title">
+      I'm <span class="sr-only">a Data Scientist, interested in Causal Inference, a Statistics enthusiast, interested in experiments, Machine Learning and MLOps</span><span class="typed" id="typed" aria-hidden="true"
+        data-phrases='["a Data Scientist", "interested in Causal Inference", "a Statistics enthusiast", "interested in experiments", "interested in Machine Learning", "interested in MLOps"]'
+        data-modes='["letters", "letters", "words", "letters", "letters", "letters"]'
+        data-loop="true">a Data Scientist</span><span class="typed-cursor" aria-hidden="true"></span>
+    </h1>
+
+    {% assign icon_i = 0 %}
+    {% for group in site.data.skills %}
+    <p class="skill-group">{{ group.group }}</p>
+    <ul class="skill-icons" aria-label="{{ group.group }}">
+      {% for skill in group.items %}
+      <li style="--i: {{ icon_i }}" tabindex="0">
+        <img src="assets/img/skills/{{ skill.icon }}" alt="{{ skill.name }}" width="44" height="44" loading="lazy">
+        <span class="skill-label" aria-hidden="true">{{ skill.name }}</span>
+      </li>
+      {% assign icon_i = icon_i | plus: 1 %}
+      {% endfor %}
+    </ul>
+    {% endfor %}
+  </section>
+
+  <h2>Experience</h2>
+  <ul class="cv-list">
+    <li>
+      <span class="cv-when">Sep 2026 – Dec 2026</span>
+      <strong>Sessional Instructor</strong>, Marketing Research (MBA), DeGroote School of Business, McMaster University, Hamilton, Canada
+    </li>
+    <li>
+      <span class="cv-when">Sep 2025 – Jan 2026</span>
+      <strong>Sessional Instructor</strong>, Introduction to Marketing, DeGroote School of Business, McMaster University, Hamilton, Canada
+    </li>
+    <li>
+      <span class="cv-when">Sep 2022 – Sep 2026</span>
+      <strong>Teaching Assistant</strong>, DeGroote School of Business, McMaster University, Hamilton, Canada
+    </li>
+    <li>
+      <span class="cv-when">Apr 2025 – Dec 2025</span>
+      <strong>Data Scientist</strong>, Shannon School of Business, Sydney, NS.
+      <span class="cv-detail">Sentence classification with zero-shot classification (BART, ModernBERT) and Gemini; data labeling via semantic similarity workflows.</span>
+    </li>
+    <li>
+      <span class="cv-when">Jan 2024 – Jun 2025</span>
+      <strong>Data Scientist</strong>, United For Iran, San Francisco, USA.
+      <span class="cv-detail">Automated dashboards and reporting; dynamic map interfaces (Plotly, GeoPandas, NetworkX) for spatial analysis; anomaly detection and behavioral clustering (K-Means, GMM); reports on asset-level trends and resource optimization.</span>
+    </li>
+    <li>
+      <span class="cv-when">Dec 2024 – Jan 2025</span>
+      <strong>Research Assistant</strong>, McMaster University, Hamilton, Canada.
+      <span class="cv-detail">Fuzzy matching workflows for disparate datasets and data preparation for longitudinal research.</span>
+    </li>
+    <li>
+      <span class="cv-when">Oct 2020 – Dec 2020</span>
+      <strong>Quant Developer</strong>, Quant Team, Tehran, Iran.
+      <span class="cv-detail">Large-scale data ingestion and cleaning for panel datasets; automated trading models (arbitrage, Monte Carlo backtesting, grid trading).</span>
+    </li>
+  </ul>
+  <p class="more-link"><a href="education-research-teaching/#teaching">Teaching details &rarr;</a></p>
+
+  <h2>Education</h2>
+  <ul class="cv-list">
+    <li><span class="cv-when">Aug 2022 – Dec 2026</span><strong>Ph.D.</strong>, Quantitative Marketing, McMaster University, Hamilton, Canada</li>
+    <li><span class="cv-when">Sep 2021 – Jul 2022</span><strong>Master</strong>, Applied Economics, Autonomous University of Barcelona, Barcelona, Spain</li>
+    <li><span class="cv-when">Sep 2020 – Jul 2021</span><strong>Master</strong>, Financial Economics, Barcelona School of Economics, Barcelona, Spain</li>
+    <li><span class="cv-when">Sep 2016 – Jul 2020</span><strong>Bachelor</strong>, Economics, University of Tehran, Tehran, Iran</li>
+  </ul>
+  <p class="more-link"><a href="education-research-teaching/#education">Education details &rarr;</a></p>
 
   <h2>Research</h2>
   <p>
-    <strong>Three essays on strategy across the digital platform ecosystem</strong>:
-    (i) complementors' privacy policy response to platform-owner entry;
-    (ii) conversational AI (Gen AI) integration in e-commerce platforms;
-    (iii) complementor response effectiveness to platform-owner entry.
+    <em>Threats and Adaptations in Digital Platforms: Essays on Strategy Across the Ecosystem</em>
+    (dissertation, McMaster University, 2026)
   </p>
-
-  <h2>Education</h2>
-  <ul>
-    <li><strong>Ph.D. Quantitative Marketing</strong>, McMaster University (Aug 2022 – Dec 2026). Dissertation: <em>Threats and Adaptations in Digital Platforms: Essays on Strategy Across the Ecosystem</em> — (1) complementors' privacy policy response to platform-owner entry, (2) conversational AI (Gen AI) integration in e-commerce platforms, (3) complementor response effectiveness to platform-owner entry. Methods: DiD, event study, panel data regression, and zero-shot classification.</li>
-    <li><strong>Master of Applied Economics</strong>, Autonomous University of Barcelona (Sep 2021 – Jul 2022). Master thesis: Market share analysis in U.S. markets.</li>
-    <li><strong>Master of Financial Economics</strong>, Barcelona School of Economics (Sep 2020 – Jul 2021). Master thesis: The financial consequences of corporate misconduct—a financial event study analysis.</li>
-    <li><strong>Bachelor of Economics</strong>, University of Tehran (Sep 2016 – Jul 2020). Graduated with distinction. Minor: Computer Science.</li>
-  </ul>
-
-  <h2>Experience</h2>
-  <ul>
-    <li><strong>Sessional Instructor</strong>, Marketing Research (MBA students), DeGroote School of Business, McMaster University, Hamilton, Canada (Sep 2026 – Dec 2026).</li>
-    <li><strong>Sessional Instructor</strong>, DeGroote School of Business, McMaster University, Hamilton, Canada (Sep 2025 – Jan 2026). Designed and delivered the full curriculum for Introduction to Marketing, including tutorials and assessments for undergraduate students.</li>
-    <li><strong>Teaching Assistant</strong>, DeGroote School of Business, McMaster University, Hamilton, Canada (Sep 2022 – Sep 2026). Facilitated learning for 1MA3 (Introduction to Marketing), 3MA3 (Marketing Research), M731 (Marketing Research, MBA), BL653 (Intermediate Marketing, Exec. MBA), and T712 (Strategic Marketing, Exec. MBA).</li>
-    <li><strong>Data Scientist</strong>, Shannon School of Business, Sydney, NS (Apr 2025 – Dec 2025). Sentence classification with zero-shot classification (BART, ModernBERT) and Gemini; data labeling via semantic similarity workflows.</li>
-    <li><strong>Data Scientist</strong>, United For Iran, San Francisco, USA (Jan 2024 – June 2025). Automated dashboards and reporting; dynamic map interfaces (Plotly, GeoPandas, NetworkX) for spatial analysis; anomaly detection and behavioral clustering (K-Means, GMM); reports on asset-level trends and resource optimization.</li>
-    <li><strong>Research Assistant</strong>, McMaster University, Hamilton, Canada (Dec 2024 – Jan 2025). Fuzzy matching workflows for disparate datasets and data preparation for longitudinal research.</li>
-    <li><strong>Quant Developer</strong>, Quant Team, Tehran, Iran (Oct 2020 – Dec 2020). Large-scale data ingestion and cleaning for panel datasets; automated trading models (arbitrage, Monte Carlo backtesting, grid trading).</li>
-  </ul>
+  <p class="more-link"><a href="education-research-teaching/#research">Research details &rarr;</a></p>
 
   <h2>Resume</h2>
   <p>
@@ -52,7 +89,10 @@ title: Home
   <p>
     <a href="https://www.linkedin.com/in/shay-abbasi-b11b99b3/">LinkedIn</a> &middot;
     <a href="https://github.com/shayanAbbasi1995">GitHub</a> &middot;
+    <a href="https://medium.com/@abbasi.shayan1995">Medium</a> &middot;
     <a href="https://phd.degroote.mcmaster.ca/profile/shayan-abbasi/">McMaster Profile</a> &middot;
     abbasi [dot] shayan1995 [at] gmail [dot] com
   </p>
 </div>
+
+<script src="public/js/typed-intro.js" defer></script>
