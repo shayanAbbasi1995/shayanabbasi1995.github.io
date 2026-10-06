@@ -1,4 +1,17 @@
 <head>
+  {% if jekyll.environment == "production" %}
+  <!-- Google tag (gtag.js). Production only (GitHub Pages), so local previews
+       don't show up in Analytics. -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L78BDKH6QP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-L78BDKH6QP');
+  </script>
+  {% endif %}
+
   <base href="{{ site.url }}{{ site.baseurl }}/">
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
