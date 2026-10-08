@@ -13,6 +13,40 @@
     Community Cloud for under $3 per semester at 50 students.
   stack: [Python, Streamlit, LangChain, Qdrant, sentence-transformers, OpenAI embeddings, DeepSeek-V3 via OpenRouter]
 
+- domain: Data Pipelines & Market Research
+  title: amazon-market-sensing — Cross-Country Amazon Product Panels
+  repo: shayanAbbasi1995/amazon-market-sensing
+  description: >-
+    Reproducible pipeline that builds longitudinal, cross-country panels of Amazon products by combining
+    McAuley Lab's Amazon Reviews 2023 with price, sales rank, rating, and review-count histories from the
+    Keepa API. It takes the products of one review category as the sampling frame, pulls each product's
+    full history in a reference marketplace and then in other country stores (11 are supported), and
+    outputs cleaned monthly and weekly panels. Every raw API response is stored before parsing, so tables
+    can be rebuilt without new API calls, and a Docker setup resumes multi-week collections after a crash.
+    The Electronics run starts from about 308,000 products and spans the US, UK, Germany, France, Canada,
+    and Italy.
+  stack: [Python, pandas, DuckDB, PyArrow, Keepa API, Hugging Face Hub, Docker, pytest]
+
+- domain: Finance & Event Studies
+  title: Non-Financial Misconduct and Market Reaction (Master's Thesis)
+  repo: shayanAbbasi1995/Non-financial-misconduct-and-Market-reaction
+  description: >-
+    Notebooks and thesis from my Master of Financial Economics at the Barcelona School of Economics, on how
+    stock markets react when S&amp;P 500 firms are sanctioned for non-financial misconduct. Estimates
+    market-model abnormal returns and cumulative abnormal returns (CAR) over event windows from [-1, 1]
+    to [-20, 20] days, handles overlapping events separately, and adds a market microstructure analysis
+    of trading around the events.
+  stack: [Python, pandas, NumPy, statsmodels, SciPy, Matplotlib, seaborn, Google Colab]
+
+- domain: Geospatial Analysis
+  title: Tehran Spatial Analysis
+  repo: shayanAbbasi1995/tehran-spatial-analysis
+  description: >-
+    Interactive maps and incident visualizations for Tehran, created as part of infrastructure diagnostics
+    work for United For Iran. Includes choropleth maps of the city's areas and administrative districts,
+    the distribution of incidents by time of day, and weekly incident frequency.
+  stack: [Python, Folium, Leaflet.js]
+
 - domain: Web Scraping & Data Collection
   title: APKMirror Crawler
   repo: shayanAbbasi1995/apkmirror-crawler
