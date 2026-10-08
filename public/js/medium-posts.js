@@ -8,7 +8,11 @@
   var handle = container.getAttribute('data-medium-handle');
   if (!handle) return;
 
-  var feedUrl = 'https://medium.com/feed/@' + handle;
+  // rss2json caches each feed URL for a long time, so new posts could take
+  // days to show up. Adding today's date (UTC) to the URL gives a fresh cache
+  // entry once a day; Medium ignores the extra parameter.
+  var today = new Date().toISOString().slice(0, 10).replace(/-/g, '');
+  var feedUrl = 'https://medium.com/feed/@' + handle + '?t=' + today;
   var apiUrl = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(feedUrl);
   var profileUrl = 'https://medium.com/@' + handle;
 
