@@ -262,6 +262,31 @@ a.sidebar-nav-item:hover {
   font-size: .9rem;
 }
 
+/* ---- Course slide downloads ---------------------------------------------- */
+
+.slide-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.slide-list li {
+  margin-bottom: .9rem;
+}
+
+.slide-links {
+  display: block;
+  font-size: .9rem;
+}
+
+.slide-lab {
+  display: block;
+  margin-top: .3rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--hairline);
+  font-size: .9rem;
+  color: #777;
+}
+
 @media (max-width: 40em) {
   .cv-when {
     float: none;

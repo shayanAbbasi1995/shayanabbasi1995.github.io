@@ -56,6 +56,7 @@ Conference presentations are listed on the [Presentations](presentations/) page.
 
 **Sessional Instructor**, Marketing Research (MBA), DeGroote School of Business, McMaster University, Hamilton, Canada (Sep 2026 – Dec 2026)
 {% if page.outline_pdf %}- [Course outline (PDF)]({{ page.outline_pdf }}){% endif %}
+- [Course slides](#m731-slides) are available below.
 
 **Sessional Instructor**, Introduction to Marketing, DeGroote School of Business, McMaster University, Hamilton, Canada (Sep 2025 – Jan 2026)
 - Designed and delivered the full curriculum, including tutorials and assessments for undergraduate students, with a focus on scenario-based learning.
@@ -65,6 +66,28 @@ Conference presentations are listed on the [Presentations](presentations/) page.
 
 **Teaching Assistant**, University of Tehran, Tehran, Iran
 - Applied Programming and Introduction to Programming (Python).
+
+### Course slides: M731 Marketing Research (MBA), Fall 2026
+{: #m731-slides}
+
+Each deck is a single self-contained HTML file: open it in the browser, or download it to keep an offline copy.
+
+{% assign slides = site.data.m731_slides %}
+{% assign slides_dir = slides.folder | replace: " ", "%20" %}
+<ul class="slide-list">
+{% for s in slides.sessions %}
+  <li>
+    <span class="cv-when">{{ s.date }}</span>
+    <strong>{{ s.session }}:</strong> {{ s.title }}
+    <span class="slide-links"><a href="{{ slides_dir }}/{{ s.file }}" target="_blank" rel="noopener">View</a> &middot; <a href="{{ slides_dir }}/{{ s.file }}" download>Download</a></span>
+    {% if s.lab_file %}
+    <span class="slide-lab">{{ s.lab_title }}
+      <span class="slide-links"><a href="{{ slides_dir }}/{{ s.lab_file }}" target="_blank" rel="noopener">View</a> &middot; <a href="{{ slides_dir }}/{{ s.lab_file }}" download>Download</a></span>
+    </span>
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>
 
 ### Course RAG teaching assistant
 
