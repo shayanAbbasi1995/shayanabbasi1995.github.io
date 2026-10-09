@@ -11,7 +11,7 @@ A selection of projects organized by domain. All code is available on [GitHub](h
   <article class="repo-card reveal" data-repo="{{ p.repo }}">
     <p class="repo-domain">{{ p.domain }}</p>
     <h3 class="repo-title"><a href="https://github.com/{{ p.repo }}" target="_blank" rel="noopener">{{ p.title }}</a></h3>
-    <p class="repo-desc">{{ p.description }}</p>
+    <p class="repo-desc">{{ p.description }}{% if p.page %} <a href="{{ p.page }}" target="_blank" rel="noopener">Project page &rarr;</a>{% endif %}</p>
     <ul class="repo-stack">
       {% for t in p.stack %}<li>{{ t }}</li>{% endfor %}
     </ul>

@@ -13,6 +13,21 @@
     Community Cloud for under $3 per semester at 50 students.
   stack: [Python, Streamlit, LangChain, Qdrant, sentence-transformers, OpenAI embeddings, DeepSeek-V3 via OpenRouter]
 
+- domain: Causal Inference & Experimentation
+  title: A/B Testing & Causal Inference Toolkit, from Scratch
+  repo: shayanAbbasi1995/a-b-testing-causal-inference-from-scratch
+  page: https://shayanabbasi1995.github.io/a-b-testing-causal-inference-from-scratch/
+  description: >-
+    An experimentation toolkit written from first principles in Python and NumPy, as 22 small functions
+    in one file. It covers the two-proportion z-test with a confidence interval for the lift, sample size
+    and power for a minimum detectable effect, a sample ratio mismatch check, Bonferroni and
+    Benjamini–Hochberg corrections for multiple metrics, difference-in-differences (from group means and
+    as an OLS interaction), and synthetic control with weights fitted by gradient descent. A final
+    decision rule turns the primary metric and its guardrails into a ship / no-ship call, and a seeded
+    demo runs everything end to end on simulated data. Built as a learning implementation through a
+    guided project on Deep-ML; the README documents its limitations.
+  stack: [Python, NumPy, A/B testing, Difference-in-differences, Synthetic control]
+
 - domain: Data Pipelines & Market Research
   title: amazon-market-sensing — Cross-Country Amazon Product Panels
   repo: shayanAbbasi1995/amazon-market-sensing
