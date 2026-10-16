@@ -46,5 +46,5 @@ Gemfile.lock
 # Source originals
 assets/ShayPic.jpg
 
-# CV sources (LaTeX) - only the compiled resume PDF in assets/pdf is published
+# CV sources (LaTeX) - kept local, not published
 /CVs/
