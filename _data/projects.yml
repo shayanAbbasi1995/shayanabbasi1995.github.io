@@ -53,6 +53,19 @@
     of trading around the events.
   stack: [Python, pandas, NumPy, statsmodels, SciPy, Matplotlib, seaborn, Google Colab]
 
+- domain: NLP & Text Mining
+  title: Text Mining at BGSE — From TF-IDF to Troll Detection
+  repo: shayanAbbasi1995/bgse-text-mining-assignments
+  description: >-
+    Notebooks from the Text Mining course at the Barcelona School of Economics. They build TF-IDF and
+    cosine retrieval from scratch in NumPy, test how a sentiment classifier trained on Yelp reviews
+    transfers to IMDB (0.97 accuracy in-domain vs 0.80 on the new domain), and compare TF-IDF with averaged
+    Word2Vec features when only 1–4% of the data is labelled. The final project detects troll tweets about
+    Catalan independence from Twitter's Information Operations archive. A model on account and tweet
+    statistics reaches 99% troll recall at 74% precision, far ahead of a text-only model, which shows that
+    behaviour gives trolls away more than wording.
+  stack: [Python, NLTK, scikit-learn, gensim, imbalanced-learn, pandas, NumPy, Google Colab]
+
 - domain: Geospatial Analysis
   title: Tehran Spatial Analysis
   repo: shayanAbbasi1995/tehran-spatial-analysis
