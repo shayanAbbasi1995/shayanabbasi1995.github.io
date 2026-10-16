@@ -54,8 +54,8 @@
   stack: [Python, pandas, NumPy, statsmodels, SciPy, Matplotlib, seaborn, Google Colab]
 
 - domain: NLP & Text Mining
-  title: Text Mining at BSE — From TF-IDF to Troll Detection
-  repo: shayanAbbasi1995/text-mining-bse
+  title: Troll Detection & Text Mining at BSE
+  repo: shayanAbbasi1995/troll-detct-text-mining-bse
   description: >-
     Notebooks from the Text Mining course at the Barcelona School of Economics. They build TF-IDF and
     cosine retrieval from scratch in NumPy, test how a sentiment classifier trained on Yelp reviews
