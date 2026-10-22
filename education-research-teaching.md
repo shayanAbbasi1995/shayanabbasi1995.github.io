@@ -43,7 +43,7 @@ Tests whether complementors' strategic responses to platform-owner entry transla
 ### Working papers
 
 - "Gamification in mobile applications," a chapter in *Gamification in Marketing*.
-- "Solving the Chicken and Egg Problem: Bootstrapping AI Platforms," stage: methodology.
+- "Investors' Reaction to Corporate Social Irresponsibility: A Meta-Analysis of Financial Event Studies."
 
 Conference presentations are listed on the [Presentations](presentations/) page.
 
