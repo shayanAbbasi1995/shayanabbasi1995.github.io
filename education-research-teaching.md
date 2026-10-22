@@ -3,9 +3,7 @@ layout: page
 title: Education, Research & Teaching
 nav_order: 0
 permalink: /education-research-teaching/
-# Set to the course outline's path (e.g. assets/pdf/Marketing_Research_MBA_Outline.pdf)
-# to show the download link in the Teaching section.
-outline_pdf:
+# M731 course outline, slides and labs are listed in _data/m731_slides.yml.
 ---
 
 ## Education
@@ -55,8 +53,7 @@ Conference presentations are listed on the [Presentations](presentations/) page.
 {: #teaching}
 
 **Sessional Instructor**, Marketing Research (MBA), DeGroote School of Business, McMaster University, Hamilton, Canada (Sep 2026 – Dec 2026)
-{% if page.outline_pdf %}- [Course outline (PDF)]({{ page.outline_pdf }}){% endif %}
-- [Course slides](#m731-slides) are available below.
+- The [course outline and slides](#m731-slides) are available below.
 
 **Sessional Instructor**, Introduction to Marketing, DeGroote School of Business, McMaster University, Hamilton, Canada (Sep 2025 – Jan 2026)
 - Designed and delivered the full curriculum, including tutorials and assessments for undergraduate students, with a focus on scenario-based learning.
@@ -67,24 +64,26 @@ Conference presentations are listed on the [Presentations](presentations/) page.
 **Teaching Assistant**, University of Tehran, Tehran, Iran
 - Applied Programming and Introduction to Programming (Python).
 
-### Course slides: M731 Marketing Research (MBA), Fall 2026
+### Course materials: M731 Marketing Research (MBA), Fall 2026
 {: #m731-slides}
-
-Each deck is a single self-contained HTML file: open it in the browser, or download it to keep an offline copy.
 
 {% assign slides = site.data.m731_slides %}
 {% assign slides_dir = slides.folder | replace: " ", "%20" %}
+{% if slides.outline %}<p><a href="{{ slides_dir }}/{{ slides.outline.file | replace: ' ', '%20' }}" download>{{ slides.outline.title }}</a></p>{% endif %}
+
+Each deck is a single self-contained HTML file: open it in the browser, or download it to keep an offline copy.
+
 <ul class="slide-list">
 {% for s in slides.sessions %}
   <li>
     <span class="cv-when">{{ s.date }}</span>
     <strong>{{ s.session }}:</strong> {{ s.title }}
     <span class="slide-links"><a href="{{ slides_dir }}/{{ s.file }}" target="_blank" rel="noopener">View</a> &middot; <a href="{{ slides_dir }}/{{ s.file }}" download>Download</a></span>
-    {% if s.lab_file %}
-    <span class="slide-lab">{{ s.lab_title }}
-      <span class="slide-links"><a href="{{ slides_dir }}/{{ s.lab_file }}" target="_blank" rel="noopener">View</a> &middot; <a href="{{ slides_dir }}/{{ s.lab_file }}" download>Download</a></span>
+    {% for lab in s.labs %}
+    <span class="slide-lab">{{ lab.title }}
+      <span class="slide-links"><a href="{{ slides_dir }}/{{ lab.file }}" target="_blank" rel="noopener">View</a> &middot; <a href="{{ slides_dir }}/{{ lab.file }}" download>Download</a></span>
     </span>
-    {% endif %}
+    {% endfor %}
   </li>
 {% endfor %}
 </ul>

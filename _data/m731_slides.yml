@@ -1,20 +1,25 @@
-# M731 Marketing Research (MBA) slide decks listed on the
+# M731 Marketing Research (MBA) materials listed on the
 # Education, Research & Teaching page. To publish a new session, drop the
-# HTML file into `folder` and add an entry here.
+# HTML file(s) into `folder` and add an entry here; labs are optional.
 folder: "assets/M731 - Mareketing Research Slides"
+outline:
+  title: Course outline (Word)
+  file: "M731 - Marketing Research Outline - Shay Abbasi.docx"
 sessions:
   - session: Session 1
     date: Sep 9, 2026
     title: Marketing Research Process & Getting Started with R
     file: session-01.html
-    lab_title: "R Lab: R, RStudio & Quarto for Marketing Research"
-    lab_file: session-01-RLab.html
+    labs:
+      - title: "R Lab: R, RStudio & Quarto for Marketing Research"
+        file: session-01-RLab.html
   - session: Session 2
     date: Sep 16, 2026
     title: Secondary Data & Research Designs
     file: session-02.html
-    lab_title: "R Lab: Secondary Data Visualisation"
-    lab_file: session-02-RLab.html
+    labs:
+      - title: "R Lab: Secondary Data Visualisation"
+        file: session-02-RLab.html
   - session: Session 3
     date: Sep 23, 2026
     title: Measurement, Data Collection, Sampling
@@ -23,3 +28,16 @@ sessions:
     date: Oct 7, 2026
     title: "Survey Design: From Attitude Scales to Questionnaire Design"
     file: session-04-05.html
+  - session: Session 6
+    date: Oct 14, 2026
+    title: Qualitative Research & Observation
+    file: session-06.html
+  - session: Session 7
+    date: Oct 21, 2026
+    title: Surveys, Survey Error & Sample Size
+    file: session-07.html
+    labs:
+      - title: "R Lab: Sampling, Confidence Intervals & Sample Size"
+        file: session-07-RLab.html
+      - title: "Excel Lab: Sampling, Confidence Intervals & Sample Size"
+        file: session-07-ExcelLab.html
