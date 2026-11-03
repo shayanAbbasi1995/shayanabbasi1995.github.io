@@ -1,5 +1,6 @@
 # Curated projects shown on the Portfolio page. `repo` is owner/name on GitHub;
 # language, stars, forks and last-updated are fetched live by public/js/github-repos.js.
+# Optional links: `page` (project website) and `demo` (demo video).
 - domain: Generative AI & RAG
   title: mk-rag — Course RAG Teaching Assistant
   repo: shayanAbbasi1995/mk-rag
@@ -78,6 +79,7 @@
 - domain: Web Scraping & Data Collection
   title: APKMirror Crawler
   repo: shayanAbbasi1995/apkmirror-crawler
+  demo: https://youtu.be/GwGVIUhRtXA
   description: >-
     Production-grade Selenium crawler for APKMirror. Extracts structured APK metadata (title, developer,
     category, version, permissions, languages, size, OS requirements) at scale. Features Cloudflare
