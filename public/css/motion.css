@@ -258,6 +258,29 @@ a.sidebar-nav-item:hover {
   color: #777;
 }
 
+/* Several roles under one organization, and bullet points under one role. */
+.cv-roles {
+  list-style: none;
+  margin: .4rem 0 0;
+  padding-left: .9rem;
+  border-left: 2px solid #e5e5e5;
+}
+
+.cv-roles li {
+  margin-bottom: .4rem;
+}
+
+.cv-points {
+  margin: .3rem 0 0;
+  padding-left: 1.2rem;
+  font-size: .9rem;
+  color: #555;
+}
+
+.cv-points li {
+  margin-bottom: .2rem;
+}
+
 .more-link {
   font-size: .9rem;
 }
